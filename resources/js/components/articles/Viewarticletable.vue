@@ -1,5 +1,8 @@
 <template>
-
+  <li class="nav-item">
+    <router-link class="nav-link active" to="/articletable">Articles
+    </router-link>
+  </li>
     <Addarticletable />
     <div class="card">
         <DataTable
@@ -59,7 +62,8 @@ const getarticles = async () => {
   await api
     .get("/api/articles")
     .then((res) => {
-      articles.value = res.data;
+
+   articles.value = res.data;
       console.log(articles.value);
       isLoading.value = false;
     })
@@ -69,7 +73,8 @@ const getarticles = async () => {
 };
 onMounted(() => {
   getarticles();
-});
+}
+)
 
 const deletearticle = async (id) => {
   if (window.confirm("Etes-vous sûr de vouloir supprimer ?")) {
@@ -81,7 +86,9 @@ const deletearticle = async (id) => {
     }
   }
 };
+
 </script>
 <style lang="css" scoped>
 </style>
+
 

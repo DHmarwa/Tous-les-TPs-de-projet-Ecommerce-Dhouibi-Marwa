@@ -49,11 +49,12 @@
             <div class="subtotal">
               <span>Subtotal</span>
               <span class="amount"
-                >{{ $store.state.Articlestore.cartTotal }} TND</span
-              >
+                >{{ $store.state.Articlestore.cartTotal }} TND</span>
             </div>
             <p>Taxes and shipping calculated at checkout</p>
-            <button>Check out</button>
+            <router-link :to="{name: 'Payment'}" > <button class="btn btn-info"> Check Out
+</button> </router-link>
+            
             <div class="continue-shopping">
               <router-link :to="{ name: 'HomeCart' }">
                 <button class="btn btn-success">

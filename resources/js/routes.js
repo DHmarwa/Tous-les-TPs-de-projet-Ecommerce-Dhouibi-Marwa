@@ -9,6 +9,7 @@ import Editarticletable from "./components/articles/Editarticletable.vue"
 import Cardarticle from "./components/articles/Cardarticle.vue"
 import HomeCart from './components/cart/HomeCart.vue';
 import Cart from './components/cart/Cart.vue';
+import Payment from './components/cart/Payment.vue';
 
 
 export const routes = [
@@ -67,5 +68,10 @@ export const routes = [
       path:'/cart',
       name:'Cart',
       component:Cart
-      }
+      },
+   {
+         path:'/payment',
+         name:'Payment',
+         component:Payment
+         }
 ]

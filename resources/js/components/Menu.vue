@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-info" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Ecommerce</a>
+      <a class="navbar-brand" href="#" style="color:fuchsia">Ecommerce</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -16,16 +16,16 @@
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <router-link class="nav-link active" to="/listcat">Catégories
+            <router-link class="nav-link active" to="/listcat" style="color: yellow;">Catégories
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" to="/listcat">Sous Catégories
+            <router-link class="nav-link active" to="/listcat" style="color:fuchsia">Sous Catégories
             </router-link>
           </li>
          
           <li class="nav-item">
-            <router-link class="nav-link active" to="/listart">Articles
+            <router-link class="nav-link active" to="/listart" style="color: yellow;">Articles
             </router-link>
           </li>
           <li class="nav-item">
@@ -34,7 +34,7 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" to="/articletable">Articles table
+            <router-link class="nav-link active" to="/articletable" style="color:fuchsia">Articles table
             </router-link>
           </li>
           <li class="nav-item dropdown">
